@@ -29,6 +29,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+
 body {
 	line-height: 1;
 }
@@ -699,6 +701,20 @@ input, select, textarea {
 			margin: 2.5rem 0;
 			width: 100%;
 		}
+
+			.image.avatar {
+			border-radius: 100%;
+		}
+
+			.image.avatar:before {
+				display: none;
+			}
+
+			.image.avatar img {
+				border-radius: 100%;
+				width: 100%;
+			  line-height: 10rem;
+			}
 
 			.image.main img {
 				width: 100%;
