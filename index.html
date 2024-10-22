@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalal El Youssoufi - Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>dalal el youssoufi, phd</h1>
+        <nav>
+            <a href="index.html">home._</a>
+            <a href="research.html">research._</a>
+            <a href="projects.html">projects._</a>
+            <a href="publications.html">publications._</a>
+            <a href="cv.html">cv._</a>
+            <a href="services.html">services._</a>
+            <a href="contact.html">contact._</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>about.</h2>
+            <p>Hi, I'm Dalal, a data scientist building innovative data-driven solutions for cultural institutions.
+            My work lies at the intersection of artificial intelligence, digital humanities, and the preservation of cultural heritage. 
+            I bring extensive experience in independently leading research projects and developing sophisticated data analysis tools, 
+            aiming to enhance the digital transformation of the cultural sector. Prior to being a data scientist, 
+            I worked as an observational astrophysicist developing data analysis code for large, 
+            multi-wavelength astronomical data taken with both space and ground-based telescopes.</p>
+        </section>
+
+        <section class="about">
+
+            <div class="info-grid">
+
+                <div class="experiences">
+                    <h3>experiences.</h3>
+                    <ul><b>Data Scientist / OFP Project</b></ul> 
+                    <ul>Brandenburgisches Landeshauptarchiv (BLHA)</ul> 
+                    <ul>Sept 2022 – Sept 2026 </ul> 
+                    <ul>Potsdam, DE</ul> 
+
+                    <!-- <ul><b>Break Fellow  </b></ul> 
+                    <ul>The Break Alliance & Escuela de Organización Industrial</ul>
+                    <ul>Jul 2023 – Nov 2023  </ul>
+                    <ul> Hybrid (Sende/Madrid, Spain / Online)</ul> -->
+                       
+                    <ul><b>Guest Scientist </b></ul> 
+                    <ul>Leibniz Institute for Astrophysics (AIP) </ul> 
+                    <ul>Jul 2021 – Mar 2022</ul>
+                    <ul>Potsdam, DE</ul>
+
+                    <ul><b>Research Scientist</b></ul> 
+                    <ul>Leibniz Institute for Astrophysics (AIP) </ul> 
+                    <ul>Dec 2016 – Jul 2021</ul>
+                    <ul>Potsdam, DE</ul>
+                    
+                    <ul><b>Teaching Assistant</b></ul> 
+                    <ul>University of Potsdam</ul>
+                    <ul>Aug 2017 - Aug 2018</ul>
+                    <ul>Potsdam, DE</ul>
+
+                    <ul><b>Research Assistant</b></ul> 
+                    <ul>Oukaimden Observatory</ul>
+                    <ul>Apr 2015 – Jul 2016</ul>
+                    <ul>Marrakech, MA</ul>
+                </div>
+
+                <div class="education">
+                    <h3>education.</h3>
+                    <ul><b>PhD in Astrophysics </b></ul>
+                    <ul></ul> Potsdam University</ul>
+                    <ul> <b>M.Sc. in Physics and Astronomy </b></ul>
+                    <ul> Cadi Ayyad University</ul>
+                    <ul> <b> B.Sc. in Physics </b></ul>
+                    <ul> Cadi Ayyad University</ul>
+                </div>
+
+                </div>
+            </div>
+        </section>
+            
+    </main>
+
+    <script>
+        // Get all the navigation links
+        const navLinks = document.querySelectorAll('nav a');
+    
+        // Add click event listener to each link
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove 'active' class from all links
+                navLinks.forEach(nav => nav.classList.remove('active'));
+    
+                // Add 'active' class to the clicked link
+                this.classList.add('active');
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
+

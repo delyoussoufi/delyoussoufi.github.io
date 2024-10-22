@@ -1,0 +1,129 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: #f4f4f4;
+    color: #000;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+nav a::before {
+    content: "→";                /* Adds an arrow before each link */
+    display: inline-block;        /* Inline-block to allow transformations */
+    transform: rotate(315deg);     /* Rotate the arrow by 45 degrees */
+    margin-right: 8px;            /* Add space between arrow and text */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover and rotation */
+}
+
+/* Hover effect */
+nav a:hover {
+    color: rgb(50, 202, 88);
+}
+
+nav a.active {
+    color: rgb(245, 86, 86); /* Text is red */
+}
+
+nav a.active::before {
+    color: rgb(245, 86, 86); /* Arrow is red */
+}
+/* Highlight link in red when clicked and remain red while active */
+/* nav a:focus, nav a:active {
+    color: rgb(245, 86, 86);
+}
+
+nav a:focus::before, nav a:active::before {
+    color: rgb(245, 86, 86);
+} */
+main {
+    margin: 0;
+    max-width: 900px; /* Limit the width of the main content */
+}
+
+.intro {
+    margin-bottom: 50px;
+}
+
+.intro p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: fit-content(550px) fit-content(300px);
+    gap: 50px;
+}
+
+/* Experience, Skills, Tools */
+.info-grid h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info-grid ul {
+    list-style-type: none;
+}
+
+.info-grid li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Left-align content and limit width */
+header, main {
+    text-align: left;
+    margin-left: 80px; /* Adds space on the left */
+}
+
+body {
+    padding-left: 0; /* Removed padding to avoid too much space */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav {
+        margin-bottom: 20px;
+    }
+}

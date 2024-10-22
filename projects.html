@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalal El Youssoufi - Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>dalal el youssoufi, phd</h1>
+        <nav>
+            <a href="index.html">home._</a>
+            <a href="research.html">research._</a>
+            <a href="projects.html">projects._</a>
+            <a href="publications.html">publications._</a>
+            <a href="cv.html">cv._</a>
+            <a href="services.html">services._</a>
+            <a href="contact.html">contact._</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>projects.</h2>
+            <ul></ul>
+            <h3><ul><b>ProvInter: Digital Provenance Tool for Art and Cultural Asset Recovery</b></ul></h3>
+            <ul><b>Type of Output: </b>Web application (Angular frontend, Flask backend)</ul>
+            <ul> <b>Status:</b>Testing phase</ul>
+            <ul><b>Link:</b> Tool is still proprietary but will be released soon.</ul>
+            <ul><b>Project Overview:</b></ul>
+            <ul> This project aimed to create a tool that facilitates the documentation and analysis of the provenance of art and cultural assets,
+            particularly those looted during the Nazi era. The primary focus was developing a standardized data schema to ensure consistent data entry, 
+            verification, and the linking of historical records. 
+            This allowed researchers to work with a reliable and accurate tool that simplified the process of tracing and documenting the history 
+            of ownership of objects. The tool is integrated into the larger Data Management System but is designed to function as a standalone 
+            component as well, offering flexibility in how it can be deployed depending on the needs of the user. </ul>
+                   </section>
+
+        <script>
+            // Get all the navigation links
+            const navLinks = document.querySelectorAll('nav a');
+        
+            // Add click event listener to each link
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Remove 'active' class from all links
+                    navLinks.forEach(nav => nav.classList.remove('active'));
+        
+                    // Add 'active' class to the clicked link
+                    this.classList.add('active');
+                });
+            });
+        </script>
+        
+            
+    </main>
+</body>

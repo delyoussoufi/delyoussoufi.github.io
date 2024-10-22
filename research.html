@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalal El Youssoufi - Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>dalal el youssoufi, phd</h1>
+        <nav>
+            <a href="index.html">home._</a>
+            <a href="research.html">research._</a>
+            <a href="projects.html">projects._</a>
+            <a href="publications.html">publications._</a>
+            <a href="cv.html">cv._</a>
+            <a href="services.html">services._</a>
+            <a href="contact.html">contact._</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>research.</h2>
+            <p>under construction</p>
+        </section>
+
+        <script>
+            // Get all the navigation links
+            const navLinks = document.querySelectorAll('nav a');
+        
+            // Add click event listener to each link
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Remove 'active' class from all links
+                    navLinks.forEach(nav => nav.classList.remove('active'));
+        
+                    // Add 'active' class to the clicked link
+                    this.classList.add('active');
+                });
+            });
+        </script>
+        
+            
+    </main>
+</body>
+</html>
+
